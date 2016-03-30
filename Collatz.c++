@@ -67,7 +67,7 @@ int collatz_eval (int i, int j) {
 // -------------
 int get_cycle_length(int i)
 {
-    /*assert(i > 0);
+    assert(i > 0);
      
      int c = 1;
      
@@ -83,10 +83,10 @@ int get_cycle_length(int i)
      
      assert(c > 0);
      
-     return c;*/
+     return c;
     
     // 1000000
-    assert(i > 0);
+    /*assert(i > 0);
     
     short cycle;
     
@@ -108,7 +108,7 @@ int get_cycle_length(int i)
     else
         cycle = cache[i - 1];
     
-    return cycle;
+    return cycle;*/
 }
 
 
