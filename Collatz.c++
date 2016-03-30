@@ -41,17 +41,6 @@ int collatz_eval (int i, int j) {
     int max_num = j;
     int cycle_length = 1;
     
-    //if(i == 0 || j == 0)
-    //{
-    //    cout<<"Invalid input"<< endl;
-    //    return 0;
-    //}
-    
-    
-    //if(i == 1 && j == 1)
-    //    return max_cycle_length;
-    
-    
     if(i > j)
     {
         max_num = i;
@@ -64,12 +53,10 @@ int collatz_eval (int i, int j) {
         cycle_length = get_cycle_length(num);
         ++num;
         
-        
         // Check if cl is greater than max cl.
         if (cycle_length > max_cycle_length)
             max_cycle_length = cycle_length;
     }
-    
     
     //cout<<"The maximum cycle length between "<<i<<" and "<<j<<" is "<<max_cycle_length<<endl;
     return max_cycle_length;
